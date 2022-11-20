@@ -1,7 +1,7 @@
 simulate_correlation <- function(data, means, sds, sample.size, sample = TRUE) {
   
-  require(corpcor)
-  require(rockchalk)
+  require(corpcor, quietly = TRUE)
+  require(rockchalk, quietly = TRUE)
   
   temp = data
   
@@ -28,7 +28,7 @@ simulate_correlation <- function(data, means, sds, sample.size, sample = TRUE) {
 
 simulate_regression <- function(data, sample.size, means, sds, r2) {
   
-  require(rockchalk)
+  require(rockchalk, quietly = TRUE)
   
   temp = data
   
